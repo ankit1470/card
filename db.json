@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name":"Ankit",
+      "age":"20",
+      "profile":"Angular JS",
+      "isSelected":false
+    },
+    {
+      "id": 2,
+      "name": "Aaisha",
+      "age": "22",
+      "profile": "React JS",
+      "isSelected": false
+    },
+    {
+      "id": 3,
+      "name": "Rohan",
+      "age": "23",
+      "profile": "MERN",
+      "isSelected": false
+    },
+    {
+      "id": 4,
+      "name": "Yash",
+      "age": "27",
+      "profile": "Mainframe",
+      "isSelected": false
+    },
+    {
+      "id": 5,
+      "name": "Sneha",
+      "age": "29",
+      "profile": "Java Developer",
+      "isSelected": false
+    },
+    {
+      "id": 6,
+      "name": "Sandy",
+      "age": "50",
+      "profile": "Backend Developer",
+      "isSelected": false
+    }
+
+
+  ]
+}

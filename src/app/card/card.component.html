@@ -1,0 +1,97 @@
+<div class="d-flex flex-wrap cards">
+    <div *ngFor="let data of dataArr;let i=index" class="row card-main gy-2"  >
+        <div class="card" style="width: 18rem;" >
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body" (click)="select(i,data)" [ngClass]=" this.dataArr[i].isSelected ? 'checkedClass' : 'uncheckedClass'" >
+                <p class="card-text"><b>Name : </b> {{data.name}}</p>
+                <p class="card-text"><b>Age : </b> {{data.age}}</p>
+                <p class="card-text"><b>Profile : </b> {{data.profile}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<form [formGroup]="cardForm">
+    <table class="table" >
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Profile</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td *ngIf="showText">{{n}}</td>
+                <td *ngIf="showField"><input placeholder="enter name" formControlName="name"></td>
+                <td *ngIf="showText">{{a}}</td>
+                <td *ngIf="showField"><input placeholder="enter age" formControlName="age"></td>
+                <td *ngIf="showText">{{p}}</td>
+                <td *ngIf="showField"><input placeholder="enter profile" formControlName="profile"></td>
+                <td><button *ngIf="showText" (click)="onEdit()">EDIT</button></td>
+                <td><button *ngIf="showField" (click)="onUpdate()">UPDATE</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form [formGroup]="cardForm">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Profile</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of dataArr;let i=index">
+                <td>{{i}}</td>
+                <td *ngIf="showText">{{data.name}}</td>
+                <td *ngIf="showField"><input placeholder="enter name" formControlName="name"></td>
+                <td *ngIf="showText">{{data.age}}</td>
+                <td *ngIf="showField"><input placeholder="enter age" formControlName="age"></td>
+                <td *ngIf="showText">{{data.profile}}</td>
+                <td *ngIf="showField"><input placeholder="enter profile" formControlName="profile"></td>
+                <td><button *ngIf="showText" (click)="onEdit(data,data.id)">EDIT</button></td>
+                <td><button *ngIf="showField" (click)="onUpdate(i)">UPDATE</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</form> -->

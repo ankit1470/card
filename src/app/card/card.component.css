@@ -1,0 +1,14 @@
+.cards{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.card-main{
+    margin: auto;
+}
+.checkedClass{
+        background-color: lightblue;
+}
+.uncheckedClass{
+
+}
